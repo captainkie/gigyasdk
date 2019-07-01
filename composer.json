@@ -1,0 +1,13 @@
+{
+  "name": "captainkie/gigyasdk",
+  "description": "Gigya PHP SDK",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gigya\\": "src/Gigya"
+    }
+  }
+}
