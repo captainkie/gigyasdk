@@ -1,10 +1,14 @@
 <?php
-require_once('GSException_Class.php');
-require_once('GSKeyNotFoundException_Class.php');
-require_once('GSRequest_Class.php');
-require_once('GSResponse_Class.php');
-require_once('GSObject_Class.php');
-require_once('SigUtils_Class.php');
+
+namespace Gigya\Lib;
+
+use Gigya\Lib\GSException;
+use Gigya\Lib\GSKeyNotFoundException;
+use Gigya\Lib\GSRequest;
+use Gigya\Lib\GSResponse;
+use Gigya\Lib\GSObject;
+use Gigya\Lib\SigUtils;
+
 class GSArray
 {
     private $map;

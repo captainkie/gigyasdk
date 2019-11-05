@@ -4,12 +4,16 @@
  * If the request was sent with the format set to "xml", the getData() will return null and you should use getResponseText() instead.
  * We only parse response text into GSObject if request format is set "json" which is the default.
  */
-require_once('GSException_Class.php');
-require_once('GSKeyNotFoundException_Class.php');
-require_once('GSRequest_Class.php');
-require_once('GSObject_Class.php');
-require_once('GSArray_Class.php');
-require_once('SigUtils_Class.php');
+
+namespace Gigya\Lib;
+
+use Gigya\Lib\GSException;
+use Gigya\Lib\GSKeyNotFoundException;
+use Gigya\Lib\GSRequest;
+use Gigya\Lib\GSObject;
+use Gigya\Lib\GSArray;
+use Gigya\Lib\SigUtils;
+
 class GSResponse
 {
     private $errorCode = 0;
